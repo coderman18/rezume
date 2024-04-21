@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <h1>Формы</h1>
+  <form>
+    <div>
+      <label for="text">Текст</label>
+      <input type="text" id="text" value="текст по умолчанию">
+    </div>
+    <br>
+    <div>
+      <label for="e-mail">E-mail</label>
+      <input type="email" id="e-mail" placeholder="Введите ваш емэйл">
+    </div>
+    <br>
+    <div>
+      <label for="password">Пароль</label>
+      <input type="password" id="password">
+    </div>
+    <br>
+    <div>
+      <label for="number">Число</label>
+      <input type="number" id="number" min="0">
+    </div>
+     <br>
+    <div>
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="10" step="2">
+    </div>
+      <br>
+    <div>
+      <label for="date">Дата</label>
+      <input type="date" id="date">
+    </div>
+    <br>
+    <div>
+      <label for="color">Цвет</label>
+      <input type="color" id="color">
+    </div>
+    <br>
+    <div>
+      <label for="message">Сообщение</label>
+      <br>
+      <textarea id="message" cols="30" rows="20"></textarea>
+    </div>
+     <br>
+    <div>
+      <label for="sex">Выбор</label>
+      <select id="sex">
+        <option value="male" selected>мужчина</option>
+        <option value="female">женщина</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label>Количество работ</label>
+      <input type="radio" name="work"> 1
+      <input type="radio" name="work"> 3
+      <input type="radio" name="work"> 10
+      <input type="radio" name="work"> +20
+    </div>
+
+    <br>
+    <div>
+      <label>Любимая еда:</label>
+      <input type="checkbox" name="eat"> Яблоки
+      <input type="checkbox" name="eat"> Груши
+      <input type="checkbox" name="eat"> Арбузы
+      <input type="checkbox" name="eat"> Сливы
+    </div>
+
+    <br>
+    <div>
+      <button type="submit">Отправить форму</button>
+    </div>
+  </form>
+
+  <br>
+  
+    <h3>Связаться со мной</h3>
+  <form>
+    <div>
+      <label for="text">Ваше имя:</label>
+      <input type="text" id="text" placeholder="Введите имя">
+    </div>
+    <br>
+    <div>
+      <label for="e-mail">Ваш e-mail</label>
+      <input type="email" id="e-mail" placeholder="Введите ваш емэйл">
+    </div>
+    <br>
+    <div>
+      <label for="message">Ваше сообщение:</label>
+      <br>
+      <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение"></textarea>
+    </div>
+     <br>
+    <div>
+      <button type="submit" value="отправить">Отправить</button>
+    </div>
+
+  </form>
+</body>
+</html>
