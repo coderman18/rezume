@@ -1,19 +1,254 @@
-h1 {
-  color: red;
+body {
+  font-family: 'Roboto', serif;
+  color: #0F141E;
+  background: #F1F1F1;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
 
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+}
+
+a:active {
+  color: blue;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  align-items: center;
+}
+
+/* стили для навигации */
+
+.navbar {
+  background:darkslategray;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+   gap: 20px;
+}
+
+.navbar ul li {
+ padding: 10px;
+}
+
+.navbar ul li:hover {
+  background: #ea6767;
+}
+
+.navbar ul li a {
+  color: antiquewhite;
+}
+
+@media (max-width: 530px) {
+  .navbar ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* хеадер */
 .header {
   border-bottom: 2px solid gray;
 }
 
-.card {
-  background-color: #eee;
-  padding: 10px;
-  margin-bottom: 10px;
+.picture {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #444;
 }
 
-.color {
-  color: red;
+/* Хобби */
+.hobbi {
+  background: #ddd;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.hobbi ol li {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3f3f3f;
+}
+
+@media (max-width: 360px) {
+  .hobbi h2 {
+    font-size: 24px;
+  }
+
+  .hobbi ol li {
+    font-size: 20px;
+  }
+}
+
+/* опыт работы */
+.experience {
+  background: #888;
+  padding: 10px 10px; 
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+thead tr th {
+  font-size: 26px;
+  text-align-last: left;
+  padding-bottom: 10px;
+}
+
+tbody tr td {
+  font-size: 18px;
+  padding-bottom: 10px;
+} 
+
+@media (max-width: 580px) {
+  table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  thead tr th {
+    font-size: 24px;
+    padding-right: 10px;
+  }
+
+  thead tr {
+    font-size: 14px;
+  }
+} 
+
+@media (max-width: 360px) {
+  thead tr th {
+    font-size: 20px;
+  }
+  .experience h3 {
+    font-size: 24px;
+  }
+}
+
+/* социальные сети */
+.social {
+  background: darkgray;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+.social_links {
+  margin: 20px 10px;
+}
+
+@media (max-width: 360px) {
+  .social h2 {
+    font-size: 24px;
+  }
+  .social_links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* описание резиме */
+.description {
+  background: bisque;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* мои контакты */
+.contacts {
+  background:burlywood;
+  padding: 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.contacts h4{
+  text-align: center;
+}
+
+.btn {
+  background: #333;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: .8;
+  
+}
+
+
+
+.form-group label{
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.info {
+  margin-bottom: 20px;
+  /* display: flex; */
 }
